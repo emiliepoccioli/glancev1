@@ -35,8 +35,9 @@ node.set[:glance][:api][:bind_open_address] = false
 node.set[:glance][:registry][:bind_open_address] = false
 
 # Set Glance Service Credentials (Authentication against Keystone)
-node.set[:glance][:service_user] = "glance"
-node.set[:glance][:service_password] = "glance"
+# There are set by default in data bags json file
+node.set_unless[:glance][:service_user] = "glance"
+node.set_unless[:glance][:service_password] = "glance"
 
 
 ######################################################################################

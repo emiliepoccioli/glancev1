@@ -61,6 +61,7 @@
       "use_keystone": true,
       "keystone_instance": "none",
       "service_user": "glance",
+      "service_password": "glance", 
       "database_engine": "database",
       "database_instance": "none",
       "sqlite_connection": "sqlite:////var/lib/glance/glance.sqlite"
